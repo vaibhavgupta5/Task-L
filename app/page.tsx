@@ -55,12 +55,12 @@ export default function ProfileDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-b p-4 lg:p-8 from-[#373E44] to-[#191B1F] flex">
+    <div className="min-h-screen bg-linear-to-b p-4 lg:p-8 lg:px-12 from-[#373E44] to-[#191B1F] flex">
       <div className="hidden lg:block lg:w-1/2"></div>
 
       <div className="w-full lg:w-1/2 flex flex-col items-center gap-6 lg:gap-4">
         <div className="bg-[#363C43] p-4 lg:p-6 rounded-3xl shadow-2xl overflow-hidden flex w-full">
-          <div className="w-[10%] hidden lg:flex items-start pt-4">
+          <div className="w-[12%] hidden lg:flex items-start pt-4 ">
             <img src="/frame.png" alt=""></img>
           </div>
 
@@ -78,7 +78,7 @@ export default function ProfileDashboard() {
                     onClick={() =>
                       setActiveTab(tab.toLowerCase().replace(" ", ""))
                     }
-                    className={`w-[195px] cursor-pointer h-[49px] rounded-[16px] font-[500] text-[18px] leading-[16.12px] px-6 py-[10px] transition-all relative overflow-hidden ${
+                    className={`md:w-[195px]  cursor-pointer h-[49px] rounded-[16px] font-[500] text-[18px] leading-[16.12px] px-6 py-[10px] transition-all relative overflow-hidden ${
                       activeTab === tab.toLowerCase().replace(" ", "")
                         ? "text-white bg-[#28292F] shadow-[13.49px_16.87px_67.47px_8.43px_#0A0A0A,_-8.43px_-16.87px_50.6px_-16.87px_#485B71]"
                         : "text-gray-400 hover:text-white before:absolute before:content-[''] before:inset-y-0 before:left-0 before:w-0 before:bg-gradient-to-r before:from-[#191B1F] before:to-[#373e4446] before:transition-all before:duration-500 hover:before:w-full"
@@ -164,7 +164,7 @@ export default function ProfileDashboard() {
 "
         />
 
-        <div className="bg-[#363C43] rounded-[18.89px] shadow-[5.67px_5.67px_3.78px_0px_#00000066] w-full lg:w-[720px] h-auto lg:h-[330px] flex p-4 lg:p-6 items-start overflow-hidden">
+        <div className="bg-[#363C43] rounded-[18.89px] shadow-[5.67px_5.67px_3.78px_0px_#00000066] w-full w-full h-auto lg:h-[330px] flex p-4 lg:p-6 items-start overflow-hidden">
           <div className="w-[6%] hidden lg:flex items-start pt-4">
             <img src="/frame.png" alt=""></img>
           </div>
